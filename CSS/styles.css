@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(1, 0, 8);
+    color:#ffffff;
+    margin: 0;
+}
+
+header {
+    background-size: cover;
+    padding-left: 1.5%;
+    padding-right: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px; 
+    margin-top: 5px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav { 
+    width: 60%;
+}
+
+nav ul {
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    padding-right: 2rem;
+    transition: all 0.2s ease 0s;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: 700;
+    color: rgb(10, 189, 244, 0.955);
+}
+
+.contact-button {
+    margin-left: 20px; /* Ajusta el margen izquierdo del botón de contacto */
+}
+
+a {
+    text-decoration: none;
+    color: #fefefe;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(10, 189, 244, 0.955);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    margin-top: 5px;
+}
+button:hover{
+    background-color: rgb(10, 164, 211);
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+article{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.954), rgba(7, 7, 7, 0)), url("../images/los-muchachos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    margin-bottom: 0.5%;
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+}
+
+
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.26%;
+    transition: opacity 0.2s ease-out;
+}
+
+.video-container.hidden {
+    opacity: 0;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+section {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 40%;
+    margin: 0 5%;
+}
+
+#intro {
+    background-image: url("../images/billy-large.jpg");
+}
+
+#los-7 {
+    background-image: url("../images/homelander-large.jpg");
+}
+
+section::before, #los-7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(7, 7, 7, 0));
+    z-index: 1;
+}
+
+.intro-text, .the-boys, .los-7 {
+    position: relative;
+    z-index: 2;
+}
+
+.intro-text {
+    padding-top: 1%;
+    padding-bottom: 5%;
+    font-family: 'Bevan';
+    font-size: 150%;
+    color: white;
+}
+
+.intro-text h1, .intro-text h2 {
+    font-weight: 300;
+}
+
+.the-boys {
+    position: absolute;
+    bottom: 0;
+    left: 1.5%;
+}
+
+.the-boys img {
+    width: 130px;
+    height: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+section div .the-boys {
+    display: flex;
+    justify-content: left;
+}
+
+.the-boys img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.los-7 {
+    position: absolute;
+    bottom: 0;
+    left: 1.3%;
+}
+
+.los-7 img {
+    width: 130px;
+    height: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#los-7 div .los-7 {
+    display: flex;
+    justify-content: left;
+}
+
+.los-7 img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.the-boys img.selected {
+    border: 2px solid white;
+}
+
+.los-7 img.selected {
+    border: 2px solid black;
+}
+
+.character-description{
+    display: block; /* Inicialmente escondido */
+    position: absolute; /* Posición absoluta para no afectar el layout */
+    top: 15%; /* Ajusta según sea necesario */
+    left: 5%;
+    left: px;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f1f1c8;
+    max-width: 400px; /* Anchura máxima para el bloque de texto */
+    z-index: 10; /* Para asegurar que esté por encima de otros elementos */
+}
+
+.character-description h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+footer{
+    background-color: black;
+}
+.footer-contenedor{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+}
+.redes-sociales a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.redes-sociales a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.redes-sociales a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.redes-sociales a:hover i{
+    color:white;
+    transition: 0.5s;
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li{
+    margin: 0 20px;
+}
+
+.footer-nav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
+.footer-copyright{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footer-copyright p{
+    color:white;
+}
+.Diseñador{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+    
+}
+
+
+
+@media (max-width: 480px) {
+    header {
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    header div, header a {
+        flex: 1 0 50%;
+    }
+
+    header nav {
+        flex-basis: 100%;
+    }
+
+    .characters {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.5rem;
+    }
+
+    .characters img {
+        width: 120px;
+        height: 100px;
+    }
+}
