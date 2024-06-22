@@ -84,7 +84,7 @@ button:hover{
     border: 1px solid black;
 }
 
-article{
+.trailers{
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.954), rgba(7, 7, 7, 0)), url("../images/los-muchachos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -321,6 +321,56 @@ footer{
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
+}
+
+#galeria {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.galeria_principal {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 50px;
+    background-color: #333; /* Añade un fondo para resaltar el texto */
+}
+
+.galeria_principal div h2 {    
+    font-size: 2.5rem;
+}
+
+.secundario .contenedor { 
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor a img {
+    margin: 10px;
+    max-width: 500px; /* Ajusta este valor según lo que necesites */
+    height: auto;
+    display: block;
+    border: 2px solid #fff; /* Añade un borde blanco a las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+    transition: transform 0.3s ease; /* Añade una transición */
+}
+
+.contenedor a img:hover {
+    transform: scale(1.05);
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
 }
 
 @media (max-width: 480px) {
