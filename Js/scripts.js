@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const imagesTheBoys = document.querySelectorAll('.the-boys img');
     const imagesLos7 = document.querySelectorAll('.los-7 img');
     const sectionTheBoys = document.getElementById('character-section');
-    const sectionLos7 = document.getElementById('los-7');
+    const sectionLos7 = document.getElementById('Los-7');
 
     function changeBackground(section, imageUrl) {
         section.style.backgroundImage = `linear-gradient(to right, rgb(0, 0, 0), rgba(11, 10, 10, 0)), url(${imageUrl})`;
@@ -55,11 +55,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const characterImages = document.querySelectorAll(".the-boys img, .los-7 img");
+    const characterImages = document.querySelectorAll(".the-boys img");
+    const Los7Images = document.querySelectorAll(".los-7 img")
     const descriptions = document.querySelectorAll(".character-description");
+   
+    characterImages.forEach(img => {
+        img.addEventListener("click", function() {
+            showDescription(img);
+        });
+    });
 
-    function showDescription(img) {
+    Los7Images.forEach(img => {
+        img.addEventListener("click", function() {
+            showDescription(img);
+        });
+    });
+
+    // Mostrar descripciones iniciales sin ocultarlas
+    const initialCharacters = ["Billy Butcher", "Homelander"];
+    initialCharacters.forEach(character => {
+        const initialCharacter = document.querySelector(`img[alt='${character}']`);
+        if (initialCharacter) {
+            showDescription(initialCharacter, true);
+        }
+    });
+
+    function showDescription(img, initialLoad = false) {
+        // Ocultar todas las descripciones, excepto las iniciales si es la primera carga
         descriptions.forEach(desc => {
+            if (initialLoad && (desc.dataset.character === "Billy Butcher" || desc.dataset.character === "Homelander")) {
+                return;
+            }
             desc.classList.add("hidden");
             desc.classList.remove("visible");
         });
@@ -69,19 +95,5 @@ document.addEventListener("DOMContentLoaded", function() {
             characterDescription.classList.remove("hidden");
             characterDescription.classList.add("visible");
         }
-    }
-
-    characterImages.forEach(img => {
-        img.addEventListener("click", function() {
-            showDescription(img);
-        });
-    });
-
-    const initialCharacters = ["Billy Butcher", "Homelander"];
-    initialCharacters.forEach(character => {
-        const initialCharacter = document.querySelector(`img[alt='${character}']`);
-        if (initialCharacter) {
-            showDescription(initialCharacter);
-        }
-    });
+    }   
 });

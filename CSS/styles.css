@@ -131,11 +131,11 @@ section {
     background-image: url("../images/billy-large.jpg");
 }
 
-#los-7 {
+#Los-7 {
     background-image: url("../images/homelander-large.jpg");
 }
 
-section::before, #los-7::before {
+section::before, #Los-7::before {
     content: '';
     position: absolute;
     top: 0;
@@ -202,7 +202,7 @@ section div .the-boys {
     box-sizing: border-box;
 }
 
-#los-7 div .los-7 {
+#Los-7 div .los-7 {
     display: flex;
     justify-content: left;
 }
@@ -226,7 +226,7 @@ section div .the-boys {
     top: 15%;
     left: 5%;
     left: px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #f3f1f1c8;
     max-width: 400px;
