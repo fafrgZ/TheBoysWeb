@@ -1,7 +1,12 @@
 let player;
+
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         videoId: 'F9U-yoJbgWs',
+        playerVars: {
+            'autoplay': 1,
+            'mute': 1
+        },
         events: {
             'onStateChange': onPlayerStateChange
         }
@@ -71,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Mostrar descripciones iniciales sin ocultarlas
     const initialCharacters = ["Billy Butcher", "Homelander"];
     initialCharacters.forEach(character => {
         const initialCharacter = document.querySelector(`img[alt='${character}']`);
@@ -81,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function showDescription(img, initialLoad = false) {
-        // Ocultar todas las descripciones, excepto las iniciales si es la primera carga
         descriptions.forEach(desc => {
             if (initialLoad && (desc.dataset.character === "Billy Butcher" || desc.dataset.character === "Homelander")) {
                 return;

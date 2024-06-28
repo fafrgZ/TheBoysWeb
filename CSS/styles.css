@@ -31,7 +31,7 @@ header {
 }
 
 nav { 
-    width: 60%;
+    width: 47%;
 }
 
 nav ul {
@@ -84,6 +84,44 @@ button:hover{
     border: 1px solid black;
 }
 
+.section-1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color:#fff;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-principal{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.contenido{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .imagenes-scroll{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
 .trailers{
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.954), rgba(7, 7, 7, 0)), url("../images/los-muchachos.jpg");
     background-size: cover;
@@ -92,7 +130,7 @@ button:hover{
     display: flex;
     margin-bottom: 0.5%;
     position: relative;
-    min-height: 500px;
+    min-height: 1000px;
     width: 100%;
 }
 
