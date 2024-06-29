@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     background-color: rgb(1, 0, 8);
@@ -186,6 +190,47 @@ button:hover{
 
 .media-info li:nth-child(1), .media-info li:nth-child(4){
     padding-left: 100px;
+}
+
+.material-icons {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+/* Back to top */
+.back-to-top{
+    position:fixed;
+    top: 20rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(13, 6, 112, 0.7);
+    border-radius: 25px;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top span{
+    color:#fff;
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top:hover{
+    background-color: #5e1abe;
+}
+.back-to-top:hover span{
+    transform: translateY(-4px);
 }
 
 .trailers{
