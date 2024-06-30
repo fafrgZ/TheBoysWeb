@@ -504,6 +504,36 @@ footer{
     margin: 0px 5px;
 }
 
+.contenedor-galeria {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.example-image-link img {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(250, 250, 250, 0.522);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.example-image-link img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
 @media (max-width: 480px) {
     header {
         align-items: center;

@@ -11,9 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="CSS/lightbox.css" rel="stylesheet" />
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="Js/scripts.js"></script>
 </head>
@@ -35,9 +34,21 @@
             <a class="boton" href="contacto.html"><button>Contacto</button></a>
         </header>
 
-        <article class="galeria">
-            
-        </article>
+        <div class="contenedor-galeria">
+            <div class="galeria">
+                <a class="example-image-link" href="./images/galeria/atrain-ad.jpg" data-lightbox="TheBoys" data-title="A-Train haciendo un anuncio"> <img class="example-image" src="./images/galeria/atrain-ad-mini.jpg" alt="A-Train haciendo anuncio"/></a>
+                <a class="example-image-link" href="./images/galeria/atrain-mata-robin.jpg" data-lightbox="TheBoys" data-title="A-Train mata a Robin"> <img class="example-image" src="./images/galeria/atrain-mata-robin-mini.jpg" alt="A-Train mata a Robin"/></a>
+                <a class="example-image-link" href="./images/galeria/blacknoir-allucinating.jpg" data-lightbox="TheBoys" data-title="Black Noir alucinando"> <img class="example-image" src="./images/galeria/blacknoir-allucinating-mini.jpg" alt="Black Noir alucinando"/></a>
+                <a class="example-image-link" href="./images/galeria/blacknoir-herido.jpg" data-lightbox="The Boys" data-title="Black Noir herido"> <img class="example-image" src="./images/galeria/blacknoir-herido-mini.jpg" alt="Black Noir herido"/></a>
+                <a class="example-image-link" href="./images/galeria/butcher-silly.jpg" data-lightbox="The Boys" data-title="Butcher con cara graciosa"> <img class="example-image" src="./images/galeria/butcher-silly-mini.jpg" alt="Butcher con cara graciosa"/></a>
+                <a class="example-image-link" href="./images/galeria/frenchie-kimiko.jpg" data-lightbox="The Boys" data-title="Frenchie cargando a Kimiko"> <img class="example-image" src="./images/galeria/frenchie-kimiko-mini.jpg" alt="Frenchie cargando a Kimiko"/></a>
+                <a class="example-image-link" href="./images/galeria/frenchie.jpg" data-lightbox="The Boys" data-title="Frenchie"> <img class="example-image" src="./images/galeria/frenchie-mini.jpg" alt="Frenchie"/></a>
+                <a class="example-image-link" href="./images/galeria/frenchie3.jpg" data-lightbox="The Boys" data-title="Frenchie"> <img class="example-image" src="./images/galeria/frenchie3-mini.jpg" alt="Frenchie"/></a>
+                <a class="example-image-link" href="./images/galeria/grupo-de-soldierboy.jpg" data-lightbox="The Boys" data-title="Soldier Boy y su grupo"> <img class="example-image" src="./images/galeria/grupo-de-soldierboy-mini.jpg" alt="Soldier Boy y su grupo"/></a>
+                <a class="example-image-link" href="./images/galeria/homelander-angry.jpg" data-lightbox="The Boys" data-title="Homelander cubierto de sangre enojado"> <img class="example-image" src="./images/galeria/homelander-angry-mini.jpg" alt="Homelander cubierto de sangre enojado"/></a>
+                <a class="example-image-link" href="./images/galeria/homelander-mata-multitud.jpg" data-lightbox="The Boys" data-title="Homelander mata a multitud"> <img class="example-image" src="./images/galeria/homelander-mata-multitud-mini.jpg" alt="Homelander mata a multitud"/></a>
+            </div>
+       </div>
 
         <footer>
             <div class="footer-contenedor">
@@ -62,4 +73,5 @@
             </div>
         </footer>
     </main>
+    <script src="Js/lightbox-plus-jquery.min.js"></script>
 </body>
