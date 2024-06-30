@@ -15,7 +15,9 @@ body{
     margin: 0;
 }
 
-header {
+.encabezado{
+    position:fixed;
+    z-index: 333;
     background-size: cover;
     padding-left: 1.5%;
     padding-right: 2.5%;
@@ -23,6 +25,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.954);
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -35,7 +39,7 @@ header {
 }
 
 nav { 
-    width: 47%;
+    width: 45%;
 }
 
 nav ul {
@@ -213,7 +217,7 @@ button:hover{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(13, 6, 112, 0.7);
+    background-color: rgba(250, 250, 250, 0.743);
     border-radius: 25px;
     padding: 0.5rem;
     text-decoration: none;
@@ -221,13 +225,13 @@ button:hover{
 }
 
 .back-to-top span{
-    color:#fff;
+    color:rgba(0, 0, 0, 0.576);
     font-size: 2rem;
     transition: 0.2s ease-out;
 }
 
 .back-to-top:hover{
-    background-color: #5e1abe;
+    background-color: rgba(204, 51, 255, 0.664);
 }
 .back-to-top:hover span{
     transform: translateY(-4px);
@@ -267,24 +271,25 @@ button:hover{
     border: 0;
 }
 
-section {
+.character-section {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 40%;
     margin: 0 5%;
+    margin-top: 25px;
 }
 
-#intro {
+#intro.character-section {
     background-image: url("../images/billy-large.jpg");
 }
 
-#Los-7 {
+#Los-7.character-section {
     background-image: url("../images/homelander-large.jpg");
 }
 
-section::before, #Los-7::before {
+.character-section::before, #Los-7.character-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -308,7 +313,8 @@ section::before, #Los-7::before {
     color: white;
 }
 
-.intro-text h1, .intro-text h2 {
+.intro-text h1,
+.intro-text h2 {
     font-weight: 300;
 }
 
@@ -326,7 +332,7 @@ section::before, #Los-7::before {
     cursor: pointer;
 }
 
-section div .the-boys {
+.character-section div .the-boys {
     display: flex;
     justify-content: left;
 }
@@ -351,7 +357,7 @@ section div .the-boys {
     box-sizing: border-box;
 }
 
-#Los-7 div .los-7 {
+#Los-7.character-section div .los-7 {
     display: flex;
     justify-content: left;
 }
@@ -369,9 +375,9 @@ section div .the-boys {
     border: 2px solid black;
 }
 
-.character-description{
+.character-description {
     display: block;
-    position: absolute; 
+    position: absolute;
     top: 15%;
     left: 5%;
     left: px;
