@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="Js/scripts.js"></script>
 </head>
@@ -42,7 +43,7 @@
             </div>
         </article>
 
-        <section class="section-1" id="Section">
+        <section class="section-1">
             <div class="container">
                 <h2 class="titulo-principal">La Serie</h2>
                 <div class="contenido">
@@ -59,7 +60,7 @@
 
         <section class="section-2">
             <div class="container">
-                <h2 class="section-title"></h2>
+                <h2 class="section-title">Puede interesarte</h2>
                 <div class="contenido">
                     <div class="imagenes-scroll">
                         <img src="./images/imagen2.jpg" alt="Los 7 posando">
@@ -80,7 +81,7 @@
                         <li><a href="https://www.facebook.com/TheBoysTV/?locale=es_LA"><i class="fa-brands fa-facebook"></i> Facebook </a></li>
                         <li><a href="https://www.instagram.com/theboystv/?hl=es"><i class="fa-brands fa-instagram"></i> Instagram </a></li>
                         <li><a href="https://x.com/TheBoysTV?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i> Twitter </a></li>
-                        <li><a href="https://www.youtube.com/@PrimeVideo"><i class="fa-brands fa-youtube"></i></a> YouTube </li>
+                        <li><a href="https://www.youtube.com/@PrimeVideo"><i class="fa-brands fa-youtube"></i> YouTube </a></li>
                     </div>
                     <div class="imagenes-scroll">
                         <img src="./images/imagen3.jpg" alt="Homelander">
@@ -114,6 +115,21 @@
         <a href="#" class="back-to-top">
             <span class="material-icons">arrow_upward</span>
         </a>
-    </main>   
+    </main>
+    
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        })
+
+        ScrollReveal().reveal('.titulo-principal, .section-title', { delay: 500, origin:'left' });
+        ScrollReveal().reveal('section-1, .imagenes-scroll, .texto2', { delay: 500, origin:'bottom' });
+        ScrollReveal().reveal('.contenedor-texto', { delay: 700, origin:'right' });
+        ScrollReveal().reveal('section-2, .imagenes-scroll, .section-3 .imagenes-scroll', { delay: 500, origin:'top' });
+        ScrollReveal().reveal('.media-info li', { delay: 500, origin:'left', interval: 200 });
+    </script>
 </body>
 </html>
