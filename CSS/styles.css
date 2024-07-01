@@ -518,8 +518,17 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.titulo-galeria {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 100px;
+    text-transform: uppercase;
+    color: #fff; /* Cambia esto al color que desees */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .example-image-link img {
