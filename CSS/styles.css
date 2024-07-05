@@ -699,7 +699,7 @@ input:focus{
 	border-bottom:2px solid black
 }
 
-button{
+.boton-contacto{
 	padding:8px 12px;
 	margin:50px 0 0;
 	border:2px solid black;
@@ -708,12 +708,12 @@ button{
 	transition:all .3s;
 }
 
-button:hover{
+.boton-contacto:hover{
 	background:#78788c;
 	color:black;
 }
 
-div.pie_contacto{
+.pie_contacto{
 	position:relative;
 	bottom:-40px;
 	background:#50505a;
@@ -725,7 +725,7 @@ div.pie_contacto{
 	left: 10%;
 }
 
-div.pie_contacto span{
+.pie_contacto span{
 		
 		margin:0 5px 0 30px;
 }
