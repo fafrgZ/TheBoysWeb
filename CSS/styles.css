@@ -549,6 +549,7 @@ footer{
 
 .example-image-link img {
     width: 100%;
+    max-width: 100%;
     border-radius: 15px;
     border: 1px solid rgba(250, 250, 250, 0.522);
     transition: 0.5s;
@@ -918,21 +919,28 @@ input:focus{
     }
 
     nav {
-        display: none; /* Ocultar el menú de navegación en móviles */
+        display: none;
         flex-direction: column;
         width: 100%;
     }
 
     nav.active {
-        display: flex; /* Mostrar el menú de navegación cuando se haga clic en el menú hamburguesa */
+        display: flex; 
     }
 
     .encabezado {
-        flex-direction: row;
-        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 50px;
+        background-color: rgba(0, 0, 0, 0.954);
+        display: flex;
+        flex-direction: column;
         align-items: center;
         padding: 2px 1.5%;
-    }
+        font-family: 'Montserrat', sans-serif;
+    }   
 
     .logo {
         margin-bottom: 0;
@@ -971,6 +979,69 @@ input:focus{
     .trailers {
         display: block;
         height: 500px;    
+    }
+
+    .section-1 {
+        padding: 40px 20px;
+    }
+
+    .titulo-principal {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+
+    .contenido {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contenido .imagenes-scroll {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contenido .contenedor-texto {
+        padding: 20px;
+        max-width: 100%;
+        margin-top: 20px;
+        transform: none;
+    }
+
+    .contenido .contenedor-texto h3 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 2.5em;
+        margin-bottom: 50px;
+        margin-top: 80px;
+    }
+
+    .info-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .texto2 {
+        width: 100%;
+        margin: 20px 0;
+        margin-left: 0;
+    }
+
+    .media-info {
+        width: 100%;
+        margin: 20px 0;
+        margin-left: 0;
+    }
+
+    .media-info li {
+        font-size: 1.2em;
+    }
+
+    .media-info li a {
+        opacity: 0.7;
+        transition: 0.5s;
     }
 
     .footer-nav ul {
@@ -1027,17 +1098,26 @@ input:focus{
     .texto-temp {
         font-size: 1em;
     }
-}
 
-@media (max-width: 1600px){
-    .box-resenas{
-        width: 45%;
-        padding: 10px;
+    .titulo-galeria {
+        padding-top: 20px;
+        font-size: 1.2em;
+    }
+
+    .titulo-galeria h1 {
+        font-size: 1.8rem;
+    }
+
+    .galeria {
+        flex-direction: column; /* Cambia a una disposición de columna para pantallas más pequeñas */
+    }
+
+    .example-image-link img {
+        width: 100%; /* Asegura que las imágenes ocupen el ancho completo */
     }
 }
 
 @media (max-width: 768px){
-
 
     .encabezado {
         position: fixed;
@@ -1099,6 +1179,8 @@ input:focus{
         margin-bottom: 20px;
     }
 
+
+
     .section-1 {
         padding: 40px 10px;
     }
@@ -1106,7 +1188,7 @@ input:focus{
     .container {
         width: 100%;
         padding: 0 20px;
-        overflow-x: hidden; /* Asegura que no haya desbordamiento horizontal */
+        overflow-x: hidden;
     }
 
     .contenido {
@@ -1198,11 +1280,11 @@ input:focus{
     .contenido-temp .texto-temp {
         width: 100%;
         max-width: 100%;
-        height: auto; /* Deja que la altura se ajuste automáticamente */
+        height: auto;
     }
 
     .contenido-temp .img-temp {
-        height: 300px; /* Ajustar la altura para pantallas más pequeñas si es necesario */
+        height: 300px;
     }
 
     .contenido-temp .texto-temp {
@@ -1227,6 +1309,29 @@ input:focus{
 
     .texto-temp {
         font-size: 1.2em;
+    }
+
+    .titulo-galeria {
+        padding-top: 250px;
+        font-size: 1.5em;
+    }
+
+    .titulo-galeria h1 {
+        font-size: 2rem;
+    }
+
+    .galeria {
+        gap: 15px;
+        margin-left: 12px; 
+    }
+
+    
+}
+
+@media (max-width: 1600px){
+    .box-resenas{
+        width: 45%;
+        padding: 10px;
     }
 }
 
