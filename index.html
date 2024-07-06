@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="Js/scripts.js"></script>
@@ -25,11 +25,6 @@
         <header class="encabezado">
             <div class="logo">
                 <a href ="index.html"> <img src = "images/logo3.png" alt = "Home" width = "150px"> </a> 
-            </div>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
             <nav id="meanu_bar" class="">
                 <ul>
@@ -41,6 +36,21 @@
                 </ul>
             </nav>
             <a class="boton" href="contacto.html"><button>Contacto</button></a>
+            <div id="menu-hamburguesa" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>    
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <ul class="menu-movil">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="resenas.html">Reseñas</a></li>
+                    <li><a href="temporadas.html">Temporadas</a></li>
+                    <a class="boton" href="contacto.html"><button>Contacto</button></a>
+                </ul>
+            </div>
         </header>
 
         <article class ="trailers">
@@ -77,15 +87,14 @@
                     </div>
                     <div class="texto2">
                         <h3 class="info-title">Curiosidades</h3>
-                        <p>Referencias a la cultura pop: La serie está llena de referencias a la cultura pop y comentarios satíricos sobre la sociedad moderna, los medios de comunicación y la política.
-
-                            Parodia de superhéroes: Muchos personajes en The Boys son parodias de superhéroes icónicos. Por ejemplo, Homelander es una versión oscura de Superman, mientras que Queen Maeve parodia a Wonder Woman.
-                            
-                            Audiencia récord: The Boys se convirtió en una de las series más vistas de Amazon Prime Video, rompiendo varios récords de audiencia para la plataforma.
-                            
+                        <p>
+                            Referencias a la cultura pop: La serie está llena de referencias a la cultura pop y comentarios satíricos sobre la sociedad moderna, los medios de comunicación y la política.
+                            Parodia de superhéroes: Muchos personajes en The Boys son parodias de superhéroes icónicos. Por ejemplo, Homelander es una versión oscura de Superman, mientras que Queen Maeve parodia a Wonder Woman.                           
+                            Audiencia récord: The Boys se convirtió en una de las series más vistas de Amazon Prime Video, rompiendo varios récords de audiencia para la plataforma.                           
                             Adaptación fiel, pero innovadora: Aunque la serie sigue la premisa básica del cómic, también toma muchas libertades creativas, introduciendo nuevos personajes y tramas para mantener a los fans del cómic intrigados.                            
                             Escenas impactantes: La serie es conocida por sus escenas impactantes y a veces grotescas, que no escatiman en sangre y violencia, manteniendo el tono crudo y brutal del material original.                           
-                           Recepción crítica: The Boys ha sido elogiada tanto por la crítica como por los espectadores por su guion, actuaciones (especialmente de Antony Starr como Homelander) y su crítica social.</p>
+                            Recepción crítica: The Boys ha sido elogiada tanto por la crítica como por los espectadores por su guion, actuaciones (especialmente de Antony Starr como Homelander) y su crítica social.
+                        </p>
                     </div>
                 </div>              
             </div>
@@ -93,7 +102,7 @@
 
         <section class="section-3">
             <div class="container">
-                <h2 class="section-title">Social Media</h2>
+                <h2 class="section-title">Redes Sociales</h2>
                 <div class="contenido">
                     <div class="media-info">
                         <li><a href="https://www.facebook.com/TheBoysTV/?locale=es_LA"><i class="fa-brands fa-facebook"></i> Facebook </a></li>

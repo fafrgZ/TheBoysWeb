@@ -26,11 +26,6 @@
             <div class="logo">
                 <a href ="index.html"> <img src = "images/logo3.png" alt = "Home" width = "150px"> </a> 
             </div>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <nav id="meanu_bar" class="">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -41,11 +36,26 @@
                 </ul>
             </nav>
             <a class="boton" href="contacto.html"><button>Contacto</button></a>
+            <div id="menu-hamburguesa" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>    
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <ul class="menu-movil">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="resenas.html">Reseñas</a></li>
+                    <li><a href="temporadas.html">Temporadas</a></li>
+                    <a class="boton" href="contacto.html"><button>Contacto</button></a>
+                </ul>
+            </div>
         </header>
 
         <h1>Contacto</h1>
-            <article class="clasecontacto">
-                <div>
+            <div class="clasecontacto">
+                <div class="contenedor-contacto">
                     <form class="form">
                         <h3 class="contacto">ESCRIBINOS</h3>
                         <input placeholder="nombre..."></input>
@@ -53,12 +63,12 @@
                         <input placeholder="mensaje..."></input>
                         <button class="boton-contacto">Enviar</button>
                         <div class="pie_contacto">
-                            <span class="fa fa-phone"></span> 054 11 6972 1110
-                            <span class="fa fa-envelope-o"></span> gonzaas161@gmail.com
+                            <span class="fa fa-phone"></span> 054 11 4350 6471
+                            <span class="fa fa-envelope-o"></span> faridfragozo@gmail.com
                         </div>
                     </form>
                 </div>
-            </article>
+            </div>
 
         <footer>
             <div class="footer-contenedor">
