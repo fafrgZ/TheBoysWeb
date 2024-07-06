@@ -800,6 +800,72 @@ input:focus{
     list-style: none;
 }
 
+.section-temp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color:#fff;
+}
+
+.contenedor-temp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-temp{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.contenido-temp{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-temp .img-temp{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.contenido-temp .img-temp img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contenido-temp .texto-temp{
+    z-index: 222;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+.contenido-temp .texto-temp h3{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+
+
 @media (max-width: 768px) {
     .encabezado {
         flex-direction: column;
