@@ -18,7 +18,6 @@ body{
 
 .encabezado{
     position:fixed;
-    min-height: 50px;
     z-index: 333;
     padding-left: 1.5%;
     padding-right: 2.5%;
@@ -167,6 +166,10 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.contenedor-texto p{
+    font-size: 1.3em;
+}
+
 .section-title{
     font-size: 3em;
     margin-bottom: 80px;
@@ -181,6 +184,10 @@ button:hover {
 .texto2{
     width: 700px;
     margin-left: 50px;
+}
+
+.texto2 p{
+    font-size: 1.5em;
 }
 
 .media-info{
@@ -234,7 +241,8 @@ button:hover {
     white-space: nowrap;
     direction: ltr;
 }
-/* Back to top */
+
+
 .back-to-top{
     position:fixed;
     top: 20rem;
@@ -306,7 +314,10 @@ button:hover {
     background-position: center;
     padding-bottom: 40%;
     margin: 0 5%;
-    margin-top: 25px;
+}
+
+#character-section{
+    padding-top: 100px;
 }
 
 #intro.character-section {
@@ -606,7 +617,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 85%;
 }
 
 .box-resenas {
@@ -703,7 +714,27 @@ footer{
 	font-family:'Montserrat',sans-serif;
 	font-size: 14px;	
 }
+.titulo-con{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding-top: 150px;
+    font-size: 2.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+.titulo-con h1{
+    padding: 20px 30px;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .contacto{
 	margin:10px 0;
 	padding-bottom:10px;
@@ -760,58 +791,6 @@ input:focus{
 	margin:0 5px 0 30px;
 }
 
-#menu-hamburguesa{
-    margin: auto 0;
-    display: none;
-    cursor: pointer;
-}
-
-#menu-hamburguesa div{
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.open .bar1{
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.open .bar2{
-    opacity: 0;
-}
-
-.open .bar3{
-    opacity: 0;
-}
-
-.open .bar4{
-    opacity: 0;
-}
-
-.open .bar5{
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-}
-
-.open .menu-movil{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.menu-movil{
-    display: none;
-    position: absolute;
-    top: 15px;
-    left: 30px;
-    height: calc(100vh - 15px);
-    width: 100%;
-    list-style: none;
-}
 
 .section-temp{
     position: relative;
@@ -832,7 +811,7 @@ input:focus{
 
 .temp-heading {
     letter-spacing: 1px;
-    padding: 50px 20px;
+    padding-top: 150px;
     font-size: 2.2em;
     display: flex;
     flex-direction: column;
@@ -907,220 +886,12 @@ input:focus{
 /* Estilos para móviles */
 @media (max-width: 480px) {
 
-    .boton{
-        display: none;
-    }
-
-    #menu-hamburguesa {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-        z-index: 999;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav.active {
-        display: flex; 
+    body {
+        overflow-x: hidden;
     }
 
     .encabezado {
         position: sticky;
-        top: 0;
-        left: 0;
-        width: 100%;
-        min-height: 50px;
-        background-color: rgba(0, 0, 0, 0.954);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2px 1.5%;
-        font-family: 'Montserrat', sans-serif;
-    }   
-
-    .logo {
-        margin-bottom: 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 1.2rem;
-        transition: font-size 0.3s ease, color 0.3s ease;
-        color: #fefefe;
-        text-decoration: none;
-        letter-spacing: 1px;
-    }
-
-    nav ul li a:hover {
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: rgba(10, 189, 244, 0.955);
-    }
-
-    .contact-button {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .trailers {
-        display: block;
-        height: 500px;    
-    }
-
-    .section-1 {
-        padding: 40px 20px;
-    }
-
-    .titulo-principal {
-        font-size: 3em;
-        margin-bottom: 30px;
-    }
-
-    .contenido {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .contenido .imagenes-scroll {
-        width: 100%;
-        height: 300px;
-    }
-
-    .contenido .contenedor-texto {
-        padding: 20px;
-        max-width: 100%;
-        margin-top: 20px;
-        transform: none;
-    }
-
-    .contenido .contenedor-texto h3 {
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
-
-    .section-title {
-        font-size: 2.5em;
-        margin-bottom: 50px;
-        margin-top: 80px;
-    }
-
-    .info-title {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-
-    .texto2 {
-        width: 100%;
-        margin: 20px 0;
-        margin-left: 0;
-    }
-
-    .media-info {
-        width: 100%;
-        margin: 20px 0;
-        margin-left: 0;
-    }
-
-    .media-info li {
-        font-size: 1.2em;
-    }
-
-    .media-info li a {
-        opacity: 0.7;
-        transition: 0.5s;
-    }
-
-    .footer-nav ul {
-        flex-direction: column;
-    }
-
-    .footer-nav ul li {
-        width: 100%;
-        text-align: center;
-        margin: 10px;
-    }
-
-    .box-top {
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-    }
-
-    .reviews {
-        margin-top: 10px;        
-    }
-
-    .section-temp {
-        padding: 40px 20px;
-    }
-
-    .temp-heading {
-        font-size: 1.5em;
-        padding-top: 120px;
-    }
-
-    .temp-heading h1 {
-        font-size: 2rem;
-        padding: 15px 20px;
-    }
-
-    .titulo-temp {
-        font-size: 2em;
-        margin-bottom: 20px;
-    }
-
-    .contenido-temp {
-        flex-direction: column;
-    }
-
-    .contenido-temp .img-temp {
-        height: 200px;
-    }
-
-    .contenido-temp .texto-temp {
-        padding: 20px;
-        height: auto;
-    }
-
-    .texto-temp {
-        font-size: 1em;
-    }
-
-    .titulo-galeria {
-        padding-top: 20px;
-        font-size: 1.2em;
-    }
-
-    .titulo-galeria h1 {
-        font-size: 1.8rem;
-    }
-
-    .galeria {
-        flex-direction: column; /* Cambia a una disposición de columna para pantallas más pequeñas */
-    }
-
-    .example-image-link img {
-        width: 100%; /* Asegura que las imágenes ocupen el ancho completo */
-    }
-}
-
-@media (max-width: 768px){
-
-    .encabezado {
-        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -1147,13 +918,16 @@ input:focus{
     nav ul {
         display: flex;
         justify-content: center;
+        align-items: center;
         list-style-type: none;
+        flex-direction: column;
         padding: 0;
         margin-left: 50px;
     }
 
-    nav ul li {
-        margin: 0 5px;
+    nav ul li {    
+        margin: 5px 10px;
+        padding-left: 10px;
     }
 
     nav ul li:last-child {
@@ -1174,12 +948,30 @@ input:focus{
         color: rgba(10, 189, 244, 0.955);
     }
 
-    .contact-button {
-        margin-top: 10px;
-        margin-bottom: 20px;
+    .boton{
+        display: block;
+        padding-left: 10px;
+    }
+    
+    .back-to-top {
+        z-index: 333;
     }
 
+    .contact-button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
+    .contact-button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .trailers {
+        margin-top: 50px;
+        display: block;
+        height: 500px;
+    }
 
     .section-1 {
         padding: 40px 10px;
@@ -1243,33 +1035,27 @@ input:focus{
         margin-bottom: 20px;
     }
 
-    .box-resenas {
+    .footer-nav ul {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
         width: 100%;
+        text-align: center;
+        margin: 10px;
     }
 
-    .resenas-heading{
-        padding-top: 200px;
-    }
-    .resenas-heading h1 {
-        font-size: 1.4rem;
+    .box-top {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
     }
 
-    .contenido .imagenes-scroll img {
-        max-width: 100%;
-        height: auto;
+    .reviews {
+        margin-top: 10px;        
     }
 
-    .back-to-top{
-        z-index: 3;
-    }
-
-    .clasecontacto{
-        width: 100%;
-        margin-top: 100px;
-    }
-
-    .pie_contacto{
-        width: 100%;
+    .resenas-heading h1{
+        font-size: 0.7em;
     }
 
     .contenido-temp {
@@ -1288,23 +1074,14 @@ input:focus{
     }
 
     .contenido-temp .texto-temp {
-        padding: 30px;
+        padding: 20px;
         height: auto;
-    }
-
-    .temp-heading {
-        font-size: 1.8em;
-        padding-top: 150px; 
-    }
-
-    .temp-heading h1 {
-        font-size: 2.5rem; 
-        padding: 20px 30px; 
     }
 
     .titulo-temp {
         font-size: 3em;
         margin-bottom: 30px;
+        width:400px;
     }
 
     .texto-temp {
@@ -1312,26 +1089,20 @@ input:focus{
     }
 
     .titulo-galeria {
-        padding-top: 250px;
-        font-size: 1.5em;
+        padding-top: 20px;
+        font-size: 1.2em;
     }
 
     .titulo-galeria h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .galeria {
-        gap: 15px;
-        margin-left: 12px; 
+        flex-direction: column;
     }
 
-    
-}
-
-@media (max-width: 1600px){
-    .box-resenas{
-        width: 45%;
-        padding: 10px;
+    .example-image-link img {
+        width: 100%;
     }
 }
 
