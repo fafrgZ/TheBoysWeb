@@ -347,8 +347,8 @@ button:hover {
 .intro-text {
     padding-top: 1%;
     padding-bottom: 5%;
-    font-family: 'Bevan';
-    font-size: 150%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
     color: white;
 }
 
@@ -358,6 +358,7 @@ button:hover {
     justify-content: left;
     align-items: left;
     text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .the-boys {
@@ -421,7 +422,7 @@ button:hover {
     display: block;
     position: absolute;
     top: 15%;
-    left: 5%;
+    left: 2%;
     left: px;
     font-size: 1.4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1103,6 +1104,41 @@ input:focus{
 
     .example-image-link img {
         width: 100%;
+    }
+
+    .intro-text {
+        font-size: 1.2em; /* Reducir tamaño de fuente para móviles */
+    }
+
+    .intro-text h1, .intro-text h2 {
+        font-size: 1.2em; /* Reducir tamaño de fuente para móviles */
+    }
+
+    .the-boys, .los-7 {
+        left: 5%; /* Ajuste de posición */
+    }
+
+    .the-boys img, .los-7 img {
+        width: 60px; /* Reducir tamaño de imágenes para móviles */
+        height: auto;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    .character-description {
+        top: 5%; /* Ajuste de posición */
+        left: 1.5%; /* Ajuste de posición */
+        font-size: 0.9em; /* Reducir tamaño de fuente para móviles */
+        max-width: 100%; /* Ajustar ancho máximo para móviles */
+        padding: 20px;
+    }
+
+    .character-description h2 {
+        font-size: 1em; /* Reducir tamaño de fuente para móviles */
+    }
+
+    .character-section{
+        padding-bottom: 100%;
     }
 }
 
