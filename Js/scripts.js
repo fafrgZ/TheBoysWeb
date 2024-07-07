@@ -101,6 +101,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }   
 });
 
-function toggleMobileMenu(menu){
-    menu.classList.toggle('open');
-}
